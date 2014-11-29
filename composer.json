@@ -1,0 +1,6 @@
+{
+    "name": "thedollarsign/yii2-adminlte-theme",
+    "require": {
+        "thedollarsign/yii2-adminlte-theme": "dev-master"
+    }
+}

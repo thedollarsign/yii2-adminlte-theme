@@ -1,5 +1,6 @@
 {
     "name": "thedollarsign/yii2-adminlte-theme",
+    "license": "MIT",
     "require": {
         "thedollarsign/yii2-adminlte-theme": "dev-master"
     }

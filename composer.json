@@ -8,6 +8,6 @@
         }
     ],
     "require": {
-        "thedollarsign/yii2-adminlte-theme": "dev-master"
+        "yiisoft/yii2-app-advanced": "dev-master"
     }
 }

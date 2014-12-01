@@ -5,7 +5,7 @@ use Yii;
 
 /**
 * Class Theme
-* @package thedollarsign\themes\admin
+* @package thedollarsign\themes\adminlte
 */
 class Theme extends \yii\base\Theme {
     public $pathMap = [

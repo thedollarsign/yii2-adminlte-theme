@@ -1,5 +1,4 @@
 <?php
-
 namespace thedollarsign\themes\adminlte;
 use Yii;
 
@@ -14,17 +13,17 @@ class Theme extends \yii\base\Theme {
 
     public function init() {
         parent::init();
-        Yii::$app->assetManager->bundles['yii\bootstrap\BootstrapAsset'] = [
-            'sourcePath' => '@thedollarsign/themes/adminlte',
-            'css' => [
-                'css/bootstrap.min.css'
-            ]
-        ];
-        Yii::$app->assetManager->bundles['yii\bootstrap\BootstrapPluginAsset'] = [
-            'sourcePath' => '@thedollarsign/themes/adminlte',
-            'js' => [
-                'js/bootstrap.min.js'
-            ]
-        ];
+        // Yii::$app->assetManager->bundles['yii\bootstrap\BootstrapAsset'] = [
+        //     'sourcePath' => '@thedollarsign/themes/adminlte',
+        //     'css' => [
+        //         'css/bootstrap.min.css'
+        //     ]
+        // ];
+        // Yii::$app->assetManager->bundles['yii\bootstrap\BootstrapPluginAsset'] = [
+        //     'sourcePath' => '@thedollarsign/themes/adminlte',
+        //     'js' => [
+        //         'js/bootstrap.min.js'
+        //     ]
+        // ];
     }
 }

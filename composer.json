@@ -2,6 +2,8 @@
     "name": "thedollarsign/yii2-adminlte-theme",
     "description": "AdminLTE theme for Yii2",
     "require": {
+        "php": ">=5.4.0", 
+        "yiisoft/yii2": "*"
     },
     "license": "MIT",
     "authors": [

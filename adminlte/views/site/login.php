@@ -1,7 +1,7 @@
 <?php
 use yii\widgets\ActiveForm;
 ?>
-<div class="form-box" id="login-box">
+<div class="form-box" id="login-box"> 
     <div class="header">Sign In</div>
     <?php $form = ActiveForm::begin(); ?>
     <div class="body bg-gray">

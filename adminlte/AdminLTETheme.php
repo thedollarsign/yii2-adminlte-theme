@@ -6,13 +6,13 @@ use Yii;
 * Class Theme
 * @package thedollarsign\themes\adminlte
 */
-class Theme extends \yii\base\Theme {
-    public $pathMap = [
-        '@backend/views' => '@thedollarsign/themes/adminlte/views'
-    ];
+class AdminLTETheme extends \yii\base\Theme {
+
+    public $pathMap = ['@backend/views' => '@thedollarsign/themes/adminlte/views'];
 
     public function init() {
         parent::init();
+        // echo "<pre>";var_dump($this->getPath());exit;
         // Yii::$app->assetManager->bundles['yii\bootstrap\BootstrapAsset'] = [
         //     'sourcePath' => '@thedollarsign/themes/adminlte',
         //     'css' => [

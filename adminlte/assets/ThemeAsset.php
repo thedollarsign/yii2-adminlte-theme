@@ -13,7 +13,7 @@ class ThemeAsset extends AssetBundle
     public $js = ['js/AdminLTE/app.js'];
 
     public $depends = [
-        'yii\web\YiiAsset',
+        // 'yii\web\YiiAsset',
         'yii\web\JqueryAsset',
         'yii\bootstrap\BootstrapAsset',
         'yii\bootstrap\BootstrapPluginAsset'

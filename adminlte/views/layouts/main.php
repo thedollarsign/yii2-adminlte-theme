@@ -116,8 +116,7 @@ use thedollarsign\themes\adminlte\assets\ThemeAsset;
 
             <!-- Main content -->
             <section class="content">
-
-
+                <?= $content?>
             </section><!-- /.content -->
         </aside><!-- /.right-side -->
     </div><!-- ./wrapper -->

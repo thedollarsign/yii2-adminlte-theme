@@ -12,7 +12,6 @@ class AdminLTETheme extends \yii\base\Theme {
 
     public function init() {
         parent::init();
-        // echo "<pre>";var_dump($this->getPath());exit;
         // Yii::$app->assetManager->bundles['yii\bootstrap\BootstrapAsset'] = [
         //     'sourcePath' => '@thedollarsign/themes/adminlte',
         //     'css' => [

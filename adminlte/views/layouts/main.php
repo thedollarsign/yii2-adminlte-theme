@@ -9,6 +9,7 @@ use thedollarsign\themes\adminlte\assets\ThemeAsset;
 <head>
     <?= $this->render('//layouts/head') ?>
 </head>
+<?php $bundles = $this->assetBundles['thedollarsign\themes\adminlte\assets\ThemeAsset']; ?>
 <body class="skin-blue">
     <?php $this->beginBody(); ?>
     <!-- header logo: style can be found in header.less -->
@@ -37,7 +38,7 @@ use thedollarsign\themes\adminlte\assets\ThemeAsset;
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header bg-light-blue">
-                                <img src="img/avatar3.png" class="img-circle" alt="User Image" />
+                                <img src="<?= $bundles->baseUrl?>/img/avatar5.png" class="img-circle" alt="User Image" />
                                 <p>
                                     <?= ucwords(Yii::$app->getUser()->getId()) ?> - Web Developer
                                     <small>Member since Nov. 2012</small>
@@ -78,7 +79,7 @@ use thedollarsign\themes\adminlte\assets\ThemeAsset;
                 <!-- Sidebar user panel -->
                 <div class="user-panel">
                     <div class="pull-left image">
-                        <img src="<?= $this->assetManager->baseUrl ?>/img/avatar3.png" class="img-circle" alt="User Image" />
+                        <img src="<?= $bundles->baseUrl?>/img/avatar5.png" class="img-circle" alt="User Image" />
                     </div>
                     <div class="pull-left info">
                         <p>Hello, <?= ucwords(Yii::$app->getUser()->getId()) ?></p>

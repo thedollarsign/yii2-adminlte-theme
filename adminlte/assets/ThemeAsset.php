@@ -8,7 +8,8 @@ class ThemeAsset extends AssetBundle
 
     public $css = [
         'css/AdminLTE.css',
-        'css/font-awesome.min.css'
+        'css/font-awesome.min.css',
+        'css/ionicons.min.css'
     ];
     public $js = ['js/AdminLTE/app.js'];
 

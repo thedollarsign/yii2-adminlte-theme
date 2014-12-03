@@ -16,7 +16,7 @@ use thedollarsign\themes\adminlte\assets\ThemeAsset;
     <header class="header">
         <a href="/" class="logo">
             <!-- Add the class icon to your logo image or logo icon to add the margining -->
-            Yii2 AdminLTE
+            <?= Yii::$app->name ?>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -33,14 +33,14 @@ use thedollarsign\themes\adminlte\assets\ThemeAsset;
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="glyphicon glyphicon-user"></i>
-                            <span><?= ucwords(Yii::$app->getUser()->getId()) ?> <i class="caret"></i></span>
+                            <span><?= ucwords(Yii::$app->user->identity->username) ?> <i class="caret"></i></span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header bg-light-blue">
                                 <img src="<?= $bundles->baseUrl?>/img/avatar5.png" class="img-circle" alt="User Image" />
                                 <p>
-                                    <?= ucwords(Yii::$app->getUser()->getId()) ?> - Web Developer
+                                    <?= ucwords(Yii::$app->user->identity->username) ?> - Web Developer
                                     <small>Member since Nov. 2012</small>
                                 </p>
                             </li>
@@ -82,7 +82,7 @@ use thedollarsign\themes\adminlte\assets\ThemeAsset;
                         <img src="<?= $bundles->baseUrl?>/img/avatar5.png" class="img-circle" alt="User Image" />
                     </div>
                     <div class="pull-left info">
-                        <p>Hello, <?= ucwords(Yii::$app->getUser()->getId()) ?></p>
+                        <p>Hello, <?= ucwords(Yii::$app->user->identity->username) ?></p>
 
                         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                     </div>

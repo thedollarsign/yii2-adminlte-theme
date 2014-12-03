@@ -4,7 +4,8 @@
     "type": "yii2-extension",
     "require": {
         "php": ">=5.4.0",
-        "yiisoft/yii2": "*"
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-jui": "*"
     },
     "license": "MIT",
     "authors": [

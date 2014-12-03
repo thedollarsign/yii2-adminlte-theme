@@ -1,7 +1,7 @@
 <?php
 use yii\widgets\Breadcrumbs;
 use yii\helpers\Url;
-use thedollarsign\themes\adminlte\assets\ThemeAsset;
+use thedollarsign\themes\adminlte\ThemeAsset;
 ?>
 <?php $this->beginPage(); ?>
 <!DOCTYPE html>
@@ -9,8 +9,8 @@ use thedollarsign\themes\adminlte\assets\ThemeAsset;
 <head>
     <?= $this->render('//layouts/head') ?>
 </head>
-<?php $bundles = $this->assetBundles['thedollarsign\themes\adminlte\assets\ThemeAsset']; ?>
-<body class="skin-blue">
+<?php $bundles = $this->assetBundles['thedollarsign\themes\adminlte\ThemeAsset']; ?>
+<body class="skin-black fixed">
     <?php $this->beginBody(); ?>
     <!-- header logo: style can be found in header.less -->
     <header class="header">

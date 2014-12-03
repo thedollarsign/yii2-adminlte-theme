@@ -1,10 +1,10 @@
 <?php
-namespace thedollarsign\themes\adminlte\assets;
+namespace thedollarsign\themes\adminlte;
 use Yii;
 use yii\web\AssetBundle;
 class ThemeAsset extends AssetBundle
 {
-    public $sourcePath = '@thedollarsign/themes/adminlte';
+    public $sourcePath = '@thedollarsign/themes/adminlte/assets';
 
     public $css = [
         'css/AdminLTE.css',

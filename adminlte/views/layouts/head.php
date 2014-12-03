@@ -1,5 +1,5 @@
 <?php
-use thedollarsign\themes\adminlte\assets\ThemeAsset;
+use thedollarsign\themes\adminlte\ThemeAsset;
 use yii\helpers\Html;
 use yii\helpers\Url;
 ?>

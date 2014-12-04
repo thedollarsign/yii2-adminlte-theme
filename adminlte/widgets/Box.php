@@ -7,6 +7,8 @@ class Box extends \yii\base\Widget {
     public $type = 'default';
     public $header = '';
     public $solid = false;
+    public $tool;
+    public $icon;
 
     public function init() {
         parent::init();
@@ -14,8 +16,24 @@ class Box extends \yii\base\Widget {
         $solid = ($this->solid) ? 'box-solid' : '';
         echo '<div class="box box-' . $this->type . ' ' . $solid .'">';
         if (isset($this->header)) {
-            echo '<div class="box-header"><h3 class="box-title"> ' . Html::encode($this->header) . ' </h3></div>';
+            $headerBegin =  '<div class="box-header">';
+            $headerEnd = '</div>';
+            $title = '<h3 class="box-title"> ' . Html::encode($this->header) . ' </h3>';
         }
+        $htmlIcon = '';
+        if (isset($this->icon)) {
+            $htmlIcon = '<i class="fa ' . $this->icon . '"></i>';
+        }
+
+        $tool = '';
+
+        if (isset($this->tool)) {
+            $toolBegin = '<div class="pull-right box-tools">';
+            $toolEnd = '</div>';
+            $tool = $toolBegin . $this->tool . $toolEnd;
+        }
+
+        echo $headerBegin . $htmlIcon . $title . $tool . $headerEnd;
         echo '<div class="box-body">';
     }
 

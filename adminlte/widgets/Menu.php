@@ -25,7 +25,7 @@ class Menu extends \yii\widgets\Menu
                     '{url}' => Url::to($item['url']),
                     '{label}' => $item['label'],
                     '{icon}' => isset($item['icon']) ? '<i class="fa ' . $item['icon'] . '"></i>' : '',
-                    '{arrow}' => '<i class="fa fa-angle-left pull-right"></i>',
+                    '{arrow}' => (isset($item['items'])) ? '<i class="fa fa-angle-left pull-right"></i>' : '',
                 ];
             } else {
                 $replace = [

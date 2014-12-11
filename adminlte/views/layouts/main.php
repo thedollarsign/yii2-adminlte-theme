@@ -10,7 +10,7 @@ use thedollarsign\themes\adminlte\ThemeAsset;
     <?= $this->render('//layouts/head') ?>
 </head>
 <?php $bundles = $this->assetBundles['thedollarsign\themes\adminlte\ThemeAsset']; ?>
-<body class="skin-black fixed">
+<body class="skin-blue fixed">
     <?php $this->beginBody(); ?>
     <!-- header logo: style can be found in header.less -->
     <header class="header">

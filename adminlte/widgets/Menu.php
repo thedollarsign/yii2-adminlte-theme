@@ -16,6 +16,8 @@ class Menu extends \yii\widgets\Menu
 
     public $submenuTemplate = "\n<ul class=\"treeview-menu\">\n{items}\n</ul>\n";
 
+    public $activateParents = true;
+
     protected function renderItem($item)
     {
         if (isset($item['url'])) {

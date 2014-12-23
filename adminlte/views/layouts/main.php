@@ -100,7 +100,7 @@ use thedollarsign\themes\adminlte\ThemeAsset;
             <section class="content-header">
                 <h1>
                     <?= $this->title ?>
-                    <small>Control panel</small>
+                    <small></small>
                 </h1>
                 <?= Breadcrumbs::widget(
                     [

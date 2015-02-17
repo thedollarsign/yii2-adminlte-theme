@@ -1,28 +1,26 @@
 <?php
 namespace thedollarsign\themes\adminlte;
 use Yii;
+use yii\base\Theme;
 
 /**
 * Class Theme
 * @package thedollarsign\themes\adminlte
 */
-class AdminLTETheme extends \yii\base\Theme {
+class AdminLTETheme extends Theme {
 
-    public $pathMap = ['@backend/views' => '@thedollarsign/themes/adminlte/views'];
+    public $pathMap = [
+        '@app/views' => [
+            '@thedollarsign/themes/adminlte/views',
+            '@app/views',
+        ]
+    ];
+
+    public $menuFile = '@app/config/adminlte_menu.php';
+
+    public $style = 'skin-blue';
 
     public function init() {
         parent::init();
-        // Yii::$app->assetManager->bundles['yii\bootstrap\BootstrapAsset'] = [
-        //     'sourcePath' => '@thedollarsign/themes/adminlte',
-        //     'css' => [
-        //         'css/bootstrap.min.css'
-        //     ]
-        // ];
-        // Yii::$app->assetManager->bundles['yii\bootstrap\BootstrapPluginAsset'] = [
-        //     'sourcePath' => '@thedollarsign/themes/adminlte',
-        //     'js' => [
-        //         'js/bootstrap.min.js'
-        //     ]
-        // ];
     }
 }

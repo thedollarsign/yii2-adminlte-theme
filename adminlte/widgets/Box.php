@@ -1,8 +1,9 @@
 <?php
 namespace thedollarsign\themes\adminlte\widgets;
 use yii\helpers\Html;
+use yii\base\Widget;
 
-class Box extends \yii\base\Widget {
+class Box extends Widget {
 
     public $type = 'default';
     public $header = '';
@@ -14,6 +15,7 @@ class Box extends \yii\base\Widget {
         parent::init();
         ob_start();
         $solid = ($this->solid) ? 'box-solid' : '';
+        $headerBegin = $title = $headerEnd = '';
         echo '<div class="box box-' . $this->type . ' ' . $solid .'">';
         if (isset($this->header)) {
             $headerBegin =  '<div class="box-header">';

@@ -10,7 +10,7 @@ use thedollarsign\themes\adminlte\ThemeAsset;
     <?= $this->render('//layouts/head') ?>
 </head>
 <?php $bundles = $this->assetBundles['thedollarsign\themes\adminlte\ThemeAsset']; ?>
-<body class="skin-blue fixed">
+<body class="<?=Yii::$app->getView()->theme->style ?> fixed">
     <?php $this->beginBody(); ?>
     <!-- header logo: style can be found in header.less -->
     <header class="header">

@@ -40,26 +40,13 @@ use thedollarsign\themes\adminlte\ThemeAsset;
                             <li class="user-header bg-light-blue">
                                 <img src="<?= $bundles->baseUrl?>/img/avatar5.png" class="img-circle" alt="User Image" />
                                 <p>
-                                    <?= ucwords(Yii::$app->user->identity->username) ?> - Web Developer
-                                    <small>Member since Nov. 2012</small>
+                                    <?= ucwords(Yii::$app->user->identity->username) ?>
+                                    <small>Member since <?=date('Y-m-d', Yii::$app->user->identity->created_at)?></small>
                                 </p>
-                            </li>
-                            <!-- Menu Body -->
-                            <li class="user-body">
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">Followers</a>
-                                </div>
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">Sales</a>
-                                </div>
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">Friends</a>
-                                </div>
                             </li>
                             <!-- Menu Footer-->
                             <li class="user-footer">
                                 <div class="pull-left">
-                                    <a href="#" class="btn btn-default btn-flat">Profile</a>
                                 </div>
                                 <div class="pull-right">
                                     <a href="<?= Url::to(array('site/logout')) ?>" class="btn btn-default btn-flat">Sign out</a>
